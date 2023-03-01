@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VisitLocationCell" rowHeight="71" id="FK3-On-BK6" customClass="VisitLocationTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FK3-On-BK6" id="gMa-0s-fQl">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lg-2p-nfC">
+                        <rect key="frame" x="20" y="22" width="54" height="26"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="5Lg-2p-nfC" secondAttribute="bottom" constant="23" id="NMC-Z3-Tr9"/>
+                    <constraint firstItem="5Lg-2p-nfC" firstAttribute="top" secondItem="gMa-0s-fQl" secondAttribute="top" constant="22" id="gAL-JU-Tlm"/>
+                    <constraint firstItem="5Lg-2p-nfC" firstAttribute="leading" secondItem="gMa-0s-fQl" secondAttribute="leading" constant="20" symbolic="YES" id="zbe-Jx-nCz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="visitiLocation" destination="5Lg-2p-nfC" id="LbU-GY-yF4"/>
+            </connections>
+            <point key="canvasLocation" x="156.52173913043478" y="108.81696428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
